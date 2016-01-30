@@ -1,4 +1,43 @@
 body{
-    background-image: url("http://drc0fhsrp02et.cloudfront.net/wp-content/uploads/2012/10/Guitar-Pick-Jesus.jpg");
-    background-size: 20%;
+    background-image: url("http://wallpapercave.com/wp/6G3gDoy.jpg");
+    background-size: 70%;
+}
+#header {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 70%;
+    position: relative;
+    left: 15%;
+    text-align: center;
+    color: white;
+}
+
+#content{
+    background-color:rgba(0,0,0,0.75);
+    color: white;
+    text-align: center;
+    width: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: fadein 2s;
+}
+
+#footer{
+    background-color:rgba(0,0,0,0.75);
+    text-align: center;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    color:white;
+}
+
+#products{
+    background-color: rgba(255,255,255,0.75);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 5px;
+}
+.nav{
+
 }
