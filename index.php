@@ -2,14 +2,14 @@
 
 <?php
 try {
-    //$dbh = new PDO('mysql:host=127.0.0.1;dbname=mydb', 'root', 'root');
+    $dbh = new PDO('mysql:host=127.0.0.1;dbname=mydb', 'root', 'root');
 } catch (PDOException $e) {
     print "Error!: " . $e->getMessage() . "<br/>";
     die();
 }
 if(@$_POST['formSubmit'] == "Submit")
 {
-    $errorMessage = "";
+    $errorMessage = null;
 // form one
     if(empty($_POST['email']))
     {
@@ -37,20 +37,23 @@ if(@$_POST['formSubmit'] == "Submit")
     }
     if(empty($_POST['card_security']))
     {
-        $errorMessage = "<li>You forgot to enter your security.</li>";
+        $errorMessage = "You forgot to enter your security.";
     }
-    $stmt = $dbh->prepare("INSERT INTO users (email, name_first, password, card_name, card_number, card_expdate, card_security)
+
+    if(!$errorMessage) {
+        $stmt = $dbh->prepare("INSERT INTO users (email, name_first, password, card_name, card_number, card_expdate, card_security)
       VALUES (:email, :name_first, :password, :card_name, :card_number, :card_expdate, :card_security)");
-    $result = $stmt->execute(array
-    (
-        'email'=>$_POST['email'],
-        'name_first'=>$_POST['name_first'],
-        'password'=>$_POST['password'],
-        'card_name'=>$_POST['card_name'],
-        'card_number'=>$_POST['card_number'],
-        'card_expdate'=>$_POST['card_expdate'],
-        'card_security'=>$_POST['card_security']
-    ));
+        $result = $stmt->execute(array
+        (
+            'email' => $_POST['email'],
+            'name_first' => $_POST['name_first'],
+            'password' => $_POST['password'],
+            'card_name' => $_POST['card_name'],
+            'card_number' => $_POST['card_number'],
+            'card_expdate' => $_POST['card_expdate'],
+            'card_security' => $_POST['card_security']
+        ));
+    }
     if(!$result){
         print_r($stmt->errorInfo());
     }
@@ -74,10 +77,14 @@ if(@$_POST['formSubmit'] == "Submit")
 
 <div id="header">
     <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation" class="active" onclick="changeHome()"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Shop</a></li>
         <li role="presentation"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
             </a></li>
+        <li role="presentation" onclick="changeSignUp();"><a href="#">Sign Up</a></li>
+        <li role="presentation"><a href="#">Login</a></li>
         <li role="presentation"><a href="#">Contact Us</a></li>
+        <h1>Instruments Online</h1>
     </ul>
 </div>
 
@@ -94,15 +101,68 @@ if(@$_POST['formSubmit'] == "Submit")
             <td><img src="http://maton.com.au/assets/images/acoustic_product_MINID_2.jpg" width="250px" height="300px"></td>
         </tr>
         <tr>
-            <td><img src="" width="250px" height="300px"></td>
-            <td><img src="" width="250px" height="300px"></td>
-            <td><img src="" width="250px" height="300px"></td>
+            <td><img src="https://www.engr.colostate.edu/~echong/images/SA500.jpg" width="250px" height="300px"></td>
+            <td><img src="https://brucemusicstore.com/dynamic/2015/08/91b4eb129c2ce40a4658b70081b2f48a.image_.550x550.jpg" width="250px" height="300px"></td>
+            <td><img src="http://s3.lonestarpercussion.com/resize/images/Gretsch/Gretsch-GBJ683SM-full.jpg" width="250px" height="300px"></td>
         </tr>
-        <tr><td>piano</td></tr>
+        <tr>
+            <td><img src="http://quirkyberkeley.com/wp-content/uploads/2014/02/Red-Hohner.jpg" width="250px" height="300px"></td>
+            <td><img src="http://cdn1.bigcommerce.com/server600/h6qlog4f/products/74/images/379/trumpet_gold_1__51792.1358323252.1280.1280.jpg?c=2" width="250px" height="300px"></td>
+            <td><img src="http://www.amromusic.com/assets/1942/steinway-b-grand-new-ebony-1.jpg" width="250px" height="300px"></td>
+
+        </tr>
     </table>
 </div>
+
+<div id="signUp">
+    <form style="text-align: center; color:black">
+        <input name="email" type="text" placeholder="email">
+        <input name="name_first" type="text" placeholder="first name">
+        <input name="password" type="text" placeholder="password">
+        <input name="card_name" type="text" placeholder="card name">
+        <input name="card_number" type="text" placeholder="card number">
+        <input name="card_expdate" type="text" placeholder="card expiration date">
+        <input name="card_security" type="text" placeholder="card security">
+        <input type="submit">
+        <button type="submit" style="color: black">Sign Up</button>
+    </form>
+</div>
+
+
+
+
+
+
+<!--
+<form>
+    <input name="name_first" type="text" placeholder="first name">
+</form>
+
+<form>
+    <input name="password" type="text" placeholder="password">
+</form>
+
+<form>
+    <input name="card_name" type="text" placeholder="card name">
+</form>
+
+<form>
+    <input name="card_number" type="text" placeholder="card number">
+</form>
+
+<form>
+    <input name="card_expdate" type="text" placeholder="card expiration date">
+</form>
+
+<form>
+    <input name="card_security" type="text" placeholder="card security">
+</form>
+-->
+
+
 <div id="footer"><p>foot</p></div>
 
+<script src="scripts.js"></script>
 
 </body>
 </html>

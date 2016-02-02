@@ -20,6 +20,19 @@ body{
     margin-left: auto;
     margin-right: auto;
     -webkit-animation: fadein 2s;
+    display: block;
+}
+
+#signUp{
+    background-color:rgba(0,0,0,0.75);
+    color: white;
+    text-align: center;
+    width: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: fadein 2s;
+    display: none;
 }
 
 #footer{
@@ -38,6 +51,4 @@ body{
     text-align: center;
     border: 5px;
 }
-.nav{
 
-}
