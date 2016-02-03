@@ -35,6 +35,58 @@ body{
     display: none;
 }
 
+#cart{
+    background-color:rgba(0,0,0,0.75);
+    color: white;
+    text-align: center;
+    width: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: fadein 2s;
+    display: none;
+}
+
+
+#login{
+    background-color:rgba(0,0,0,0.75);
+    color: white;
+    text-align: center;
+    width: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: fadein 2s;
+    display: none;
+}
+
+
+#contactUs{
+    background-color:rgba(0,0,0,0.75);
+    color: white;
+    text-align: center;
+    width: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: fadein 2s;
+    display: none;
+}
+
+
+#shop{
+    background-color:rgba(0,0,0,0.75);
+    color: white;
+    text-align: center;
+    width: 70%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: fadein 2s;
+    display: none;
+}
+
+
 #footer{
     background-color:rgba(0,0,0,0.75);
     text-align: center;
@@ -42,6 +94,7 @@ body{
     position: relative;
     left: 15%;
     color:white;
+    margin-top: 5px;
 }
 
 #products{
@@ -49,6 +102,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    border: 5px;
+    border: 10px;
 }
 

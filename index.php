@@ -77,13 +77,13 @@ if(@$_POST['formSubmit'] == "Submit")
 
 <div id="header">
     <ul class="nav nav-tabs">
-        <li role="presentation" class="active" onclick="changeHome()"><a href="#">Home</a></li>
-        <li role="presentation"><a href="#">Shop</a></li>
-        <li role="presentation"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+        <li role="presentation" class="" onclick="changeHome()"><a href="#">Home</a></li>
+        <li role="presentation" onclick="changeShop()"><a href="#">Shop</a></li>
+        <li role="presentation" onclick="changeCart()"><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
             </a></li>
         <li role="presentation" onclick="changeSignUp();"><a href="#">Sign Up</a></li>
-        <li role="presentation"><a href="#">Login</a></li>
-        <li role="presentation"><a href="#">Contact Us</a></li>
+        <li role="presentation" onclick="changeLogin()"><a href="#">Login</a></li>
+        <li role="presentation" onclick="changeContactUs()"><a href="#">Contact Us</a></li>
         <h1>Instruments Online</h1>
     </ul>
 </div>
@@ -128,7 +128,18 @@ if(@$_POST['formSubmit'] == "Submit")
     </form>
 </div>
 
+<div id="cart">cart</div>
 
+<div id="login">
+    <form style="text-align: center; color:black">
+        <input name="email" type="text" placeholder="email">
+        <input name="password" type="text" placeholder="password">
+    </form>
+</div>
+
+<div id="contactUs">contact us</div>
+
+<div id="shop">shop</div>
 
 
 
@@ -160,7 +171,8 @@ if(@$_POST['formSubmit'] == "Submit")
 -->
 
 
-<div id="footer"><p>foot</p></div>
+<div id="footer"><p>   Copyright &copy; 2016 Erick Ciudad
+    </p></div>
 
 <script src="scripts.js"></script>
 
