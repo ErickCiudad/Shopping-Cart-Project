@@ -103,5 +103,32 @@ body{
     margin-right: auto;
     text-align: center;
     border: 10px;
+    table-layout: fixed;
+    z-index: 20000000000000;
+}
+
+#productsInfo{
+    background-color: rgba(0,0,0,0.30);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 10px;
+    table-layout: fixed;
+    width: 754px;
+    height: 1205px;
+    position: relative;
+    bottom: 1240px;
+    z-index: 0;
+}
+
+#instrumentPic {
+    -webkit-transition: .4s ease-in-out opacity;
+    -moz-transition: .4s ease-in-out opacity;
+    -o-transition: .4s ease-in-out opacity;
+    transition: .4s ease-in-out opacity;
+}
+
+#instrumentPic:hover {
+    opacity: 0.07;
 }
 

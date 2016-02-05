@@ -53,3 +53,4 @@ function changeCart() {
     document.getElementById('contactUs').style.display = 'none';
     document.getElementById('cart').style.display = 'block';
 }
+
