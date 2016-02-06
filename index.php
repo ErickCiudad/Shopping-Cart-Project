@@ -92,54 +92,75 @@ if(@$_POST['formSubmit'] == "Submit")
 
 
 
+    <!--<p style="position: relative; top: 100px; float: left; right: -250px; z-index: 2">Xylophone</p> -->
 
-    <table id="products" border="100px">
-    <tr>
-        <td><img id="instrumentPic"  src="https://s-media-cache-ak0.pinimg.com/236x/23/9a/64/239a640191cdf50f386e54f4cab38f0d.jpg" width="250px" height="300px"></td>
-        <td><img id="instrumentPic" src="http://www.ozwinds.com.au/images/YRS-24B-700.jpg" width="250px" height="300px"></td>
-        <td><img  id="instrumentPic" src="http://westmusic.cachefly.net/getDynamicImage.aspx?w=800&h=800&b=00ffffff&path=Studio-49-1600-Series-AX-1600-Rosewood-Alto-Diatonic-Xylophone.jpg" width="250px" height="300px"></td>
-    </tr>
+    <div id="pleaseGodMakeThisWork1">
+    <table id="productsInfo" border="100px">
         <tr>
-            <td><img  id="instrumentPic" src="http://drumshopglasgowonline.co.uk/images/CP221DWBongos.jpg" width="250px" height="300px"></td>
-            <td><img id="instrumentPic" src="http://www.raleighmusiclessons.com/wp-content/uploads/2013/06/DV016_Jpg_Large_H73551_violin_and_bow.jpg" width="250px" height="300px"></td>
-            <td><img id="instrumentPic" src="http://maton.com.au/assets/images/acoustic_product_MINID_2.jpg" width="250px" height="300px"></td>
+            <td>Triangle<br><br>$20<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
+            <td>Recorder<br><br>$30<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
+            <td>Xylophone<br><br>$50<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
         </tr>
         <tr>
-            <td><img id="instrumentPic" src="https://www.engr.colostate.edu/~echong/images/SA500.jpg" width="250px" height="300px"></td>
-            <td><img  id="instrumentPic" src="https://brucemusicstore.com/dynamic/2015/08/91b4eb129c2ce40a4658b70081b2f48a.image_.550x550.jpg" width="250px" height="300px"></td>
-            <td><img id="instrumentPic"  src="http://s3.lonestarpercussion.com/resize/images/Gretsch/Gretsch-GBJ683SM-full.jpg" width="250px" height="300px"></td>
+            <td>Bangos<br><br>$80<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
+            <td>Violin<br><br>$100<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
+            <td>Acoustic Guitar<br><br>$200<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
         </tr>
         <tr>
-            <td><img  id="instrumentPic" src="http://quirkyberkeley.com/wp-content/uploads/2014/02/Red-Hohner.jpg" width="250px" height="300px"></td>
-            <td><img  id="instrumentPic" src="http://cdn1.bigcommerce.com/server600/h6qlog4f/products/74/images/379/trumpet_gold_1__51792.1358323252.1280.1280.jpg?c=2" width="250px" height="300px"></td>
-            <td><img id="instrumentPic" src="http://www.amromusic.com/assets/1942/steinway-b-grand-new-ebony-1.jpg" width="250px" height="300px"></td>
-
+            <td>Electric Guitar<br><br>$300<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
+            <td>Saxophone<br><br>$400<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
+            <td>Drumset<br><br>$500<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Accordion<br><br>$600<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
+            <td>Trumpet<br><br>$800<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
+            <td>Grand Piano<br><br>$1000<br><br>  <button type="button" class="btn btn-success">Add To Cart</button>
+            </td>
         </tr>
     </table>
+        </div>
+    <div id="pleaseGodMakeThisWork2">
+        <table id="products">
+            <tr>
+            <tr>
+                <td><img id="instrumentPic"  src="https://s-media-cache-ak0.pinimg.com/236x/23/9a/64/239a640191cdf50f386e54f4cab38f0d.jpg" width="250px" height="300px"></td>
+                <td><img id="instrumentPic" src="http://www.ozwinds.com.au/images/YRS-24B-700.jpg" width="250px" height="300px"></td>
+                <td><img  id="instrumentPic" src="http://westmusic.cachefly.net/getDynamicImage.aspx?w=800&h=800&b=00ffffff&path=Studio-49-1600-Series-AX-1600-Rosewood-Alto-Diatonic-Xylophone.jpg" width="250px" height="300px"></td>
+            </tr>
+            <tr>
+                <td><img  id="instrumentPic" src="http://drumshopglasgowonline.co.uk/images/CP221DWBongos.jpg" width="250px" height="300px"></td>
+                <td><img id="instrumentPic" src="http://www.raleighmusiclessons.com/wp-content/uploads/2013/06/DV016_Jpg_Large_H73551_violin_and_bow.jpg" width="250px" height="300px"></td>
+                <td><img id="instrumentPic" src="http://maton.com.au/assets/images/acoustic_product_MINID_2.jpg" width="250px" height="300px"></td>
+            </tr>
+            <tr>
+                <td><img id="instrumentPic" src="https://www.engr.colostate.edu/~echong/images/SA500.jpg" width="250px" height="300px"></td>
+                <td><img  id="instrumentPic" src="https://brucemusicstore.com/dynamic/2015/08/91b4eb129c2ce40a4658b70081b2f48a.image_.550x550.jpg" width="250px" height="300px"></td>
+                <td><img id="instrumentPic"  src="http://s3.lonestarpercussion.com/resize/images/Gretsch/Gretsch-GBJ683SM-full.jpg" width="250px" height="300px"></td>
+            </tr>
+            <tr>
+                <td><img  id="instrumentPic" src="http://quirkyberkeley.com/wp-content/uploads/2014/02/Red-Hohner.jpg" width="250px" height="300px"></td>
+                <td><img  id="instrumentPic" src="http://cdn1.bigcommerce.com/server600/h6qlog4f/products/74/images/379/trumpet_gold_1__51792.1358323252.1280.1280.jpg?c=2" width="250px" height="300px"></td>
+                <td><img id="instrumentPic" src="http://www.amromusic.com/assets/1942/steinway-b-grand-new-ebony-1.jpg" width="250px" height="300px"></td>
+
+            </tr>
+            </tr>
+        </table>
+    </div>
 </div>
 
-<table id="productsInfo">
-    <tr>
-        <td>a</td>
-        <td></td>
-        <td>a</td>
-    </tr>
-    <tr>
-        <td>a</td>
-        <td>a</td>
-        <td>a</td>
-    </tr>
-    <tr>
-        <td>a</td>
-        <td>a</td>
-        <td>a</td>
-    </tr>
-    <tr>
-        <td>a</td>
-        <td>a</td>
-        <td>a</td>
-    </tr>
-</table>
+
+
 
 <?php
 $servername = "localhost";
